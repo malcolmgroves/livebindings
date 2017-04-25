@@ -1,0 +1,114 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 339
+  ClientWidth = 260
+  FormFactor.Width = 1680
+  FormFactor.Height = 1050
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object EditAmount: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Text = '$67.67'
+    Position.X = 8.000000000000000000
+    Position.Y = 304.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    object Label1: TLabel
+      Position.Y = -14.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.WordWrap = False
+      Text = 'Amount'
+    end
+  end
+  object NavigatorPrototypeBindSource1: TBindNavigator
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    DataSource = PrototypeBindSource1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object Label2: TLabel
+    Position.X = 125.000000000000000000
+    Position.Y = 307.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = '67.67'
+  end
+  object Grid1: TGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 8.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 241.000000000000000000
+    Size.PlatformDefault = False
+    RowHeight = 21.000000000000000000
+    RowCount = 200
+    Viewport.Width = 221.000000000000000000
+    Viewport.Height = 216.000000000000000000
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'Lastname'
+        Generator = 'ColorsNames'
+        ReadOnly = False
+      end
+      item
+        Name = 'Amount'
+        FieldType = ftCurrency
+        Generator = 'Currency'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 200
+    Top = 296
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 148
+    Top = 269
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Amount'
+      Control = EditAmount
+      Track = False
+      CustomFormat = 'CurrencyToStr(%s)'
+      CustomParse = 'StrToCurrency(%s)'
+    end
+    object LinkPropertyToField1: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Amount'
+      Component = Label2
+      ComponentProperty = 'Text'
+    end
+    object LinkGridToDataSource1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      GridControl = Grid1
+      Columns = <
+        item
+          MemberName = 'Lastname'
+          Width = 128
+          CustomFormat = '"Mr " + UpperCase(%s)'
+        end
+        item
+          MemberName = 'Amount'
+        end>
+    end
+  end
+end

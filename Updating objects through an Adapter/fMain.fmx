@@ -1,0 +1,303 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 441
+  ClientWidth = 375
+  FormFactor.Width = 1920
+  FormFactor.Height = 1080
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object NavigatorAdapterBindSource1: TBindNavigator
+    Position.X = 24.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    DataSource = AdapterBindSource1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object GroupBox1: TGroupBox
+    Position.X = 24.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 329.000000000000000000
+    Size.Height = 121.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Values via LiveBindings'
+    object EditFirstname: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Text = 
+        'ipsum mi vehicula purus, eu congue sapien orci eu est. Morbi bla' +
+        'ndit volutpat ante, non ultrices eros semper at. Fusce leo leo, ' +
+        'mollis id viverra a, pulvinar non diam. Praesent ornare mauris a' +
+        'c magna placerat rutrum.Curabitur volutpat urna fermentum sem ia' +
+        'culis ultrices. Maecenas adipiscing sapien risus, nec consectetu' +
+        'r arcu. Sed in arcu iaculis felis placerat elementum vitae porta' +
+        ' libero. Donec quis purus nisi, ac ultrices lorem. Proin vitae d' +
+        'iam id turpis rhoncus vestibulum scelerisque vel leo. Nulla quis' +
+        ' scelerisque sem. Etiam imperdiet lacinia nulla sit amet varius.' +
+        ' Aliquam in interdum mauris. Praesent placerat, libero vel biben' +
+        'dum malesuada, velit libero vestibulum erat, vel porttitor diam ' +
+        'urna et nibh. Nullam fringilla cursus tempor. Cras eleifend male' +
+        'suada lacus quis consectetur. Cum sociis natoque penatibus et ma' +
+        'gnis dis parturient montes, nascetur ridiculus mus. Sed vestibul' +
+        'um bibendum sodales.Mauris consectetur ipsum ac turpis aliquam i' +
+        'd placerat justo ornare. Donec nisl arcu, faucibus vel dictum vi' +
+        'tae, dapibus vel mauris. Sed lacinia, elit ut commodo tempor, ma' +
+        'uris felis consequat nisl, sit amet laoreet est quam et tortor. ' +
+        'Proin mattis interdum tempus. Etiam ac vehicula neque. Donec tem' +
+        'por, velit sit'
+      Position.X = 80.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      object Label1: TLabel
+        Position.X = -64.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Firstname'
+      end
+    end
+    object EditLastname: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Text = 
+        'ipsum mi vehicula purus, eu congue sapien orci eu est. Morbi bla' +
+        'ndit volutpat ante, non ultrices eros semper at. Fusce leo leo, ' +
+        'mollis id viverra a, pulvinar non diam. Praesent ornare mauris a' +
+        'c magna placerat rutrum.Curabitur volutpat urna fermentum sem ia' +
+        'culis ultrices. Maecenas adipiscing sapien risus, nec consectetu' +
+        'r arcu. Sed in arcu iaculis felis placerat elementum vitae porta' +
+        ' libero. Donec quis purus nisi, ac ultrices lorem. Proin vitae d' +
+        'iam id turpis rhoncus vestibulum scelerisque vel leo. Nulla quis' +
+        ' scelerisque sem. Etiam imperdiet lacinia nulla sit amet varius.' +
+        ' Aliquam in interdum mauris. Praesent placerat, libero vel biben' +
+        'dum malesuada, velit libero vestibulum erat, vel porttitor diam ' +
+        'urna et nibh. Nullam fringilla cursus tempor. Cras eleifend male' +
+        'suada lacus quis consectetur. Cum sociis natoque penatibus et ma' +
+        'gnis dis parturient montes, nascetur ridiculus mus. Sed vestibul' +
+        'um bibendum sodales.Mauris consectetur ipsum ac turpis aliquam i' +
+        'd placerat justo ornare. Donec nisl arcu, faucibus vel dictum vi' +
+        'tae, dapibus vel mauris. Sed lacinia, elit ut commodo tempor, ma' +
+        'uris felis consequat nisl, sit amet laoreet est quam et tortor. ' +
+        'Proin mattis interdum tempus. Etiam ac vehicula neque. Donec tem' +
+        'por, velit sit'
+      Position.X = 80.000000000000000000
+      Position.Y = 54.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      object Label2: TLabel
+        Position.X = -64.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Lastname'
+      end
+    end
+    object EditAge: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Text = '-33'
+      Position.X = 80.000000000000000000
+      Position.Y = 86.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      object Label3: TLabel
+        Position.X = -64.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Age'
+      end
+    end
+  end
+  object GroupBox2: TGroupBox
+    Position.X = 24.000000000000000000
+    Position.Y = 304.000000000000000000
+    Size.Width = 329.000000000000000000
+    Size.Height = 121.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Values from Object'
+    object Label6: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 59.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Lastname'
+    end
+    object Label4: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Firstname'
+    end
+    object Label5: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 95.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Age'
+    end
+    object lblObjectFirstname: TLabel
+      Position.X = 80.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'lblObjectFirstname'
+    end
+    object lblObjectLastname: TLabel
+      Position.X = 80.000000000000000000
+      Position.Y = 61.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'lblObjectLastname'
+    end
+    object lblObjectAge: TLabel
+      Position.X = 80.000000000000000000
+      Position.Y = 95.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'lblObjectAge'
+    end
+  end
+  object GroupBox3: TGroupBox
+    Position.X = 24.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 329.000000000000000000
+    Size.Height = 129.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Values from AdapterBindSource.InternalAdapter'
+    object Label10: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Firstname'
+    end
+    object Label11: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Lastname'
+    end
+    object Label12: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 96.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Age'
+    end
+    object lblAdapterFirstname: TLabel
+      Position.X = 80.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'lblAdapterFirstname'
+    end
+    object lblAdapterLastname: TLabel
+      Position.X = 80.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'lblAdapterLastname'
+    end
+    object lblAdapterAge: TLabel
+      Position.X = 80.000000000000000000
+      Position.Y = 96.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'lblAdapterAge'
+    end
+  end
+  object Button1: TButton
+    Position.X = 272.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Refresh'
+    OnClick = Button1Click
+  end
+  object AdapterBindSource1: TAdapterBindSource
+    AutoActivate = True
+    OnCreateAdapter = AdapterBindSource1CreateAdapter
+    Adapter = DataGeneratorAdapter1
+    ScopeMappings = <>
+    Left = 272
+    Top = 328
+  end
+  object DataGeneratorAdapter1: TDataGeneratorAdapter
+    FieldDefs = <
+      item
+        Name = 'Firstname'
+        Generator = 'LoremIpsum'
+        ReadOnly = False
+      end
+      item
+        Name = 'Lastname'
+        Generator = 'LoremIpsum'
+        ReadOnly = False
+      end
+      item
+        Name = 'Age'
+        FieldType = ftInteger
+        Generator = 'Integers'
+        ReadOnly = False
+      end>
+    Active = True
+    AutoPost = False
+    Options = [loptAllowInsert, loptAllowDelete, loptAllowModify]
+    Left = 272
+    Top = 392
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 260
+    Top = 221
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = AdapterBindSource1
+      FieldName = 'Firstname'
+      Control = EditFirstname
+      Track = False
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = AdapterBindSource1
+      FieldName = 'Lastname'
+      Control = EditLastname
+      Track = False
+    end
+    object LinkControlToField5: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = AdapterBindSource1
+      FieldName = 'Age'
+      Control = EditAge
+      Track = False
+    end
+  end
+end

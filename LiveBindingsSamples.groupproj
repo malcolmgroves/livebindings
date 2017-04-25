@@ -1,0 +1,96 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BBB65845-04F3-4234-BE51-5366D46833EA}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Updating objects through an Adapter\UpdatingObjectsThroughAnAdapter.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Formatting your Fields\MGCustomLiveBindingMethods.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Formatting your Fields\CustomFormattingAndParsing.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Treating an Integer as a Boolean\IntToBool.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Custom Generator\MGCustomGenerator.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Custom Generator\EmailGeneratorSample.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="UpdatingObjectsThroughAnAdapter">
+        <MSBuild Projects="Updating objects through an Adapter\UpdatingObjectsThroughAnAdapter.dproj"/>
+    </Target>
+    <Target Name="UpdatingObjectsThroughAnAdapter:Clean">
+        <MSBuild Projects="Updating objects through an Adapter\UpdatingObjectsThroughAnAdapter.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UpdatingObjectsThroughAnAdapter:Make">
+        <MSBuild Projects="Updating objects through an Adapter\UpdatingObjectsThroughAnAdapter.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MGCustomLiveBindingMethods">
+        <MSBuild Projects="Formatting your Fields\MGCustomLiveBindingMethods.dproj"/>
+    </Target>
+    <Target Name="MGCustomLiveBindingMethods:Clean">
+        <MSBuild Projects="Formatting your Fields\MGCustomLiveBindingMethods.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MGCustomLiveBindingMethods:Make">
+        <MSBuild Projects="Formatting your Fields\MGCustomLiveBindingMethods.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CustomFormattingAndParsing">
+        <MSBuild Projects="Formatting your Fields\CustomFormattingAndParsing.dproj"/>
+    </Target>
+    <Target Name="CustomFormattingAndParsing:Clean">
+        <MSBuild Projects="Formatting your Fields\CustomFormattingAndParsing.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CustomFormattingAndParsing:Make">
+        <MSBuild Projects="Formatting your Fields\CustomFormattingAndParsing.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IntToBool">
+        <MSBuild Projects="Treating an Integer as a Boolean\IntToBool.dproj"/>
+    </Target>
+    <Target Name="IntToBool:Clean">
+        <MSBuild Projects="Treating an Integer as a Boolean\IntToBool.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IntToBool:Make">
+        <MSBuild Projects="Treating an Integer as a Boolean\IntToBool.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MGCustomGenerator">
+        <MSBuild Projects="Custom Generator\MGCustomGenerator.dproj"/>
+    </Target>
+    <Target Name="MGCustomGenerator:Clean">
+        <MSBuild Projects="Custom Generator\MGCustomGenerator.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MGCustomGenerator:Make">
+        <MSBuild Projects="Custom Generator\MGCustomGenerator.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EmailGeneratorSample">
+        <MSBuild Projects="Custom Generator\EmailGeneratorSample.dproj"/>
+    </Target>
+    <Target Name="EmailGeneratorSample:Clean">
+        <MSBuild Projects="Custom Generator\EmailGeneratorSample.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EmailGeneratorSample:Make">
+        <MSBuild Projects="Custom Generator\EmailGeneratorSample.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="UpdatingObjectsThroughAnAdapter;MGCustomLiveBindingMethods;CustomFormattingAndParsing;IntToBool;MGCustomGenerator;EmailGeneratorSample"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="UpdatingObjectsThroughAnAdapter:Clean;MGCustomLiveBindingMethods:Clean;CustomFormattingAndParsing:Clean;IntToBool:Clean;MGCustomGenerator:Clean;EmailGeneratorSample:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="UpdatingObjectsThroughAnAdapter:Make;MGCustomLiveBindingMethods:Make;CustomFormattingAndParsing:Make;IntToBool:Make;MGCustomGenerator:Make;EmailGeneratorSample:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
